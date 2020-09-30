@@ -9,7 +9,11 @@ module.exports = {
         where: { id: req.session.session_id },
         attributes: ["userId"],
         include: [
-          { model: db.Contents, as: "contents", attributes: ["title"] },
+          {
+            model: db.Contents,
+            as: "contents",
+            attributes: ["title", "createdAt"],
+          },
           {
             model: db.Comments,
             as: "comments",
