@@ -17,7 +17,7 @@ module.exports = {
           {
             model: db.Comments,
             as: "comments",
-            attributes: ["comment", "fk_contentId"],
+            attributes: ["comment", "fk_contentId", "createdAt"],
           },
         ],
       }).then((userInfo) => {
