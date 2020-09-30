@@ -8,6 +8,7 @@ module.exports = {
       db.Contents.findAll({
         where: {
           id: req.body.fk_contentId,
+          createdAt: req.body.createdAt,
         },
         attributes: ["title", "content", "createdAt"],
         include: [
@@ -22,6 +23,7 @@ module.exports = {
           },
         ],
       }).then((content) => {
+        console.log(content);
         res.status(201).send(content);
       });
     } else {
