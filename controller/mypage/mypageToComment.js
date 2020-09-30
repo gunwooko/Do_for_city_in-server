@@ -8,7 +8,6 @@ module.exports = {
       db.Contents.findAll({
         where: {
           id: req.body.fk_contentId,
-          createdAt: req.body.createdAt,
         },
         attributes: ["title", "content", "createdAt"],
         include: [
