@@ -9,7 +9,7 @@ module.exports = {
         where: {
           id: req.body.fk_contentId,
         },
-        attributes: ["title", "content", "createdAt"],
+        attributes: ["title", "content", "referenceFile", "createdAt"],
         include: [
           { model: db.Users, as: "contents", attributes: ["userId"] },
           {
