@@ -89,9 +89,7 @@ Back-end
 </div>
 
 - Back-end
-- Gmail : kkw722@gmail.com
 - GitHub : https://github.com/gunwooko
-- Blog : https://velog.io/@gunwooko
 
 ## :busts_in_silhouette: 이지만
 <div>
